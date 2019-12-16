@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .w-100 {
+            width: 100px;
+        }
+
+        .w-200 {
+            width: 200px;
+        }
+
+        .w-300 {
+            width: 300px;
+        }
+
+        .w-400 {
+            width: 400px;
+        }
+
+        .w-500 {
+            width: 500px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        div {
+            outline: 1px solid #ddd;
+        }
+
+        button {
+            width: 50px;
+            flex-shrink: 0;
+        }
+
+        input {
+            min-width: 30px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex w-100 justify-content-center">
+        <input type="text" value="123">
+        <button>click</button>
+    </div>
+    <div class="flex w-200">
+        <input type="text" value="123">
+        <button>click</button>
+    </div>
+    <div class="flex w-300" style="align-items: center;">
+        <input type="text" value="123">
+        <button style="height:30px;">click</button>
+    </div>
+    <div class="flex w-400">
+        <input type="text" value="123">
+        <button>click</button>
+    </div>
+    <div class="flex">
+        <input type="text" value="123">
+        <button>click</button>
+        <input type="text" value="123">
+        <button>click</button>
+    </div>
+</body>
+
+</html>
